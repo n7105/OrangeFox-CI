@@ -31,7 +31,7 @@ export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export LC_ALL="C"
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 
-# Not Recommended to Change
+# Not Recommended to Change.
 export SYNC_PATH="$HOME/work" # Full (absolute) path.
 export USE_CCACHE=1
 export CCACHE_SIZE="50G"
