@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_9.0"
-export DT_LINK="https://gitlab.com/OrangeFox/device/beryllium.git -b fox_9.0"
+export FOX_BRANCH="fox_10.0"
+export DT_LINK="https://github.com/n7105/android_device_samsung_m10f -b fox"
 
-export DEVICE="beryllium"
-export OEM="xiaomi"
+export DEVICE="m10f"
+export OEM="samsung"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
@@ -27,6 +27,9 @@ export EXTRA_CMD="export OF_MAINTAINER=Sushrut1101"
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
 export OF_USE_LATEST_MAGISK=true
+export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export LC_ALL="C"
+export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work" # Full (absolute) path.
